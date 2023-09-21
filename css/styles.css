@@ -10,7 +10,7 @@
     .container {
         background-color: lightgrey;
         display: flex;
-        height: 99vh;
+        height: 100vh;
     }
 }
 
@@ -33,29 +33,32 @@ img {
 }
     
 .sign-up {
-    background-color: aquamarine;
+    background-color: lightcoral;
     padding: 10px;
     margin: 2px;
     flex: 1 1 35%;
 }
 
 .media {
-    background-color: lightblue;
-    display: flex;
+    background-color: lightgreen;
+    position: relative;
     margin: 2px;
     flex: 1;
+    overflow: hidden;
 }
 
-.media div {
+.icon {
     background-color: rgba(0, 0, 0, 0.6);
+    /* border-color: red; */
     position: absolute;
     display: flex;
-    height: 13%;
-    width: 825px;
-    bottom: 950px;
-    color: white;
+    min-width: 100%;
+    min-height: 10%;
+    top: 20%;
+    left: 0%;
     align-items: center;
     justify-content: center;
-    font-size: 85px;
     font-family: "Mulish-Black";
+    font-size: 90px;
+    color: white;
 }
