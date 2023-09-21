@@ -6,16 +6,32 @@
     box-sizing: border-box;
 }
 
-.content {
-    background-color: lightgray;
-    padding: 10px;
-    width: 800px;
-    height: 800px;
-    margin: 100px;
+@media screen and (min-width: 400px) {
+    .container {
+        background-color: lightgrey;
+        display: flex;
+        height: 99vh;
+    }
 }
 
-.visuals {
-    background-color: lightblue;
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.cover {
+    object-fit: cover;
+}
+    
+.sign-up {
+    background-color: aquamarine;
     padding: 10px;
-    margin: 100px;
+    margin: 2px;
+    flex: 1 1 20%;
+}
+
+.media {
+    background-color: lightblue;
+    margin: 2px;
+    flex: 1;
 }
