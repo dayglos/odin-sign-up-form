@@ -50,12 +50,12 @@ img {
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     display: flex;
-    height: 10%;
+    height: 13%;
     width: 825px;
     bottom: 950px;
     color: white;
     align-items: center;
     justify-content: center;
-    font-size: 70px;
+    font-size: 85px;
     font-family: "Mulish-Black";
 }
