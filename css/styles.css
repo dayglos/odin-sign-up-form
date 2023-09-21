@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 2px solid blue;
+    font-size: 40px;
+    box-sizing: border-box;
+}
+
+.content {
+    background-color: lightgray;
+    padding: 10px;
+    width: 800px;
+    height: 800px;
+    margin: 100px;
+}
+
+.visuals {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 100px;
+}
