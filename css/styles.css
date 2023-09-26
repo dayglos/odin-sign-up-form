@@ -55,9 +55,19 @@ img {
     min-width: 100%;
     min-height: 10%;
     top: 20%;
-    left: 0%;
     align-items: center;
     justify-content: center;
     font-family: "Mulish-Black";
     color: white;
+}
+
+.credit {
+    position: absolute;
+    bottom: 1%;
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkgrey;
 }
