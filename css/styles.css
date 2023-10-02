@@ -4,12 +4,12 @@
     /* border: 2px solid blue; */
     font-size: 24px;
     box-sizing: border-box;
-    color: white;
+    color: #f9f8f6;
 }
 
 @media screen and (min-width: 400px) {
     .container {
-        background-color: #1f1f1f;
+        background-color: #030302;
         display: flex;
         height: 100vh;
     }
@@ -54,20 +54,21 @@ form {
     margin-top: 30px;
     padding: 60px 0px 60px 100px;
     column-gap: 120px;
-    box-shadow: 0px 10px 8px grey;
+    background-color: #a29771;
+    box-shadow: 0px 10px 8px #2b281c;
 }
 
 button {
     margin-top: 60px;
     margin-left: 100px;
     background-color: transparent;
-    border-color: #0088cc;
+    border-color: #b6ad90;
     border-radius: 10px;
     padding: 10px;
 }
 
 button:hover {
-    background-color: #0088cc;
+    background-color: #b6ad90;
 }
 
 .footer {
@@ -104,11 +105,15 @@ label {
     display: flex;
     min-width: 100%;
     min-height: 10%;
-    top: 20%;
+    top: 18%;
     align-items: center;
     justify-content: center;
     font-family: "Mulish-Black";
     color: white;
+}
+
+.icon img {
+    width: 6%;
 }
 
 .credit {
@@ -118,6 +123,6 @@ label {
     min-width: 100%;
     align-items: center;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: darkgrey;
+    font-family: 'Segoe UI';
+    color: #2b281c;
 }
