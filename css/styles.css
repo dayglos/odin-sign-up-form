@@ -109,8 +109,9 @@ input {
     outline: none;
 }
 
-input:focus {
+input:hover, input:focus {
     box-shadow: 2px 2px 6px black;
+    transition: 500ms all ease;
 }
 
 label {
