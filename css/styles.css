@@ -4,13 +4,13 @@
     /* border: 2px solid blue; */
     font-size: 26px;
     box-sizing: border-box;
-    color: #f9f8f6;
+    color: #f7f3ee;
     font-family: 'Segoe UI';
 }
 
 @media screen and (min-width: 400px) {
     .container {
-        background-color: #030302;
+        background-color: #18130b;
         display: flex;
         height: 100vh;
     }
@@ -53,21 +53,43 @@ form {
     margin-top: 30px;
     padding: 60px 0px 60px 100px;
     column-gap: 120px;
-    background-color: #a29771;
-    box-shadow: 0px 10px 8px #2b281c;
+    background-color: #aa8450;
+    box-shadow: 0px 10px 8px #231b10;
 }
 
-button {
+.btn {
     margin-top: 60px;
     margin-left: 100px;
     background-color: transparent;
-    border-color: #b6ad90;
+    border: 3px solid #aa8450;
     border-radius: 10px;
     padding: 10px;
+    position: relative;
+    z-index: 1;
 }
 
-button:hover {
-    background-color: #b6ad90;
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn::before {
+    transition: 500ms all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #aa8450;
+}
+
+.btn:hover::before {
+    transition: 500ms all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
 
 .footer {
@@ -80,9 +102,15 @@ input {
     flex-direction: column;
     min-width: 480px;
     color: black;
+    border-color: black;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 4px;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 2px 2px 6px black;
 }
 
 label {
@@ -91,7 +119,6 @@ label {
 }
 
 .media {
-    background-color: lightgreen;
     position: relative;
     margin: 2px;
     flex: 1;
