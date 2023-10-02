@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
     /* border: 2px solid blue; */
-    font-size: 40px;
+    font-size: 24px;
     box-sizing: border-box;
+    color: white;
 }
 
 @media screen and (min-width: 400px) {
     .container {
-        background-color: lightgrey;
+        background-color: #1f1f1f;
         display: flex;
         height: 100vh;
     }
@@ -33,10 +34,54 @@ img {
 }
     
 .sign-up {
-    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    flex: 1;
+    font-family: Arial;
+}
+
+.description {
+    padding-top: 110px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 30px;
+    padding: 60px 0px 60px 100px;
+    column-gap: 120px;
+    box-shadow: 0px 8px 8px grey;
+}
+
+button {
+    margin-top: 60px;
+    margin-left: 100px;
+    background-color: transparent;
+    border-color: #0088cc;
+    border-radius: 10px;
     padding: 10px;
-    margin: 2px;
-    flex: 1 1 35%;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    min-width: 480px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
 .media {
@@ -49,7 +94,6 @@ img {
 
 .icon {
     background-color: rgba(0, 0, 0, 0.6);
-    /* border-color: red; */
     position: absolute;
     display: flex;
     min-width: 100%;
