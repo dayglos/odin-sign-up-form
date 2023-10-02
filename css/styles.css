@@ -92,6 +92,10 @@ form {
     z-index: -1;
 }
 
+.btn:active {
+    transform: translateY(1px)
+}
+
 .footer {
     margin-left: 100px;
     margin-top: 60px;
